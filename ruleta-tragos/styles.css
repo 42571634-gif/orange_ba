@@ -188,6 +188,8 @@ footer { display: flex; justify-content: space-between; gap: 20px; padding: 28px
 }
 
 @media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; }
+  html { scroll-behavior: auto !important; }
+  body *:not(#wheel), body *::before, body *::after { transition-duration: .01ms !important; }
+  #wheel { transition-duration: .7s !important; }
 }
 
