@@ -38,6 +38,9 @@ let spinning = false;
 let selected = null;
 let round = 1;
 
+const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+const spinDuration = prefersReducedMotion ? 120 : 2200;
+
 function drawWheel() {
   const size = canvas.width;
   const center = size / 2;
@@ -127,18 +130,28 @@ function spin() {
   const current = ((rotation % 360) + 360) % 360;
   const desired = (360 - winner * sliceDeg) % 360;
   const delta = (desired - current + 360) % 360;
-  rotation += 1440 + delta;
+  rotation += 1080 + delta;
 
-  canvas.style.transition = "transform 4.6s cubic-bezier(.12,.72,.12,1)";
+  canvas.style.transition = prefersReducedMotion
+    ? "none"
+    : `transform ${spinDuration}ms cubic-bezier(.12,.72,.12,1)`;
   canvas.style.transform = `rotate(${rotation}deg)`;
 
-  setTimeout(() => {
+  let finished = false;
+  const finishSpin = () => {
+    if (finished) return;
+    finished = true;
     spinning = false;
     spinButton.disabled = false;
     selectIngredient(winner);
     round += 1;
     roundCounter.textContent = `Ronda ${String(round).padStart(2, "0")}`;
-  }, 4700);
+  };
+
+  if (!prefersReducedMotion) {
+    canvas.addEventListener("transitionend", finishSpin, { once: true });
+  }
+  setTimeout(finishSpin, spinDuration + 100);
 }
 
 function renderRecipe() {
