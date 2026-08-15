@@ -1,18 +1,18 @@
 const cocktails = [
-  { name: "Sol de Agave", short: "SOL DE AGAVE", color: "#f06428", note: "Tequila, Aperol y burbujas especiadas.", method: "Sirve con hielo y completa con ginger ale.", ingredients: [["Tequila", "30 ml"], ["Aperol", "20 ml"], ["Ginger ale", "60 ml"]] },
-  { name: "Pisco Spritz", short: "PISCO SPRITZ", color: "#ef3f25", note: "Frutal, cítrico y ligeramente amargo.", method: "Sirve con hielo y remueve suavemente.", ingredients: [["Pisco", "30 ml"], ["Aperol", "20 ml"], ["Agua tónica", "60 ml"]] },
-  { name: "Lima Mule", short: "LIMA MULE", color: "#f7b83c", note: "Pisco fresco con jengibre y especias.", method: "Construye directamente en un vaso con hielo.", ingredients: [["Pisco", "40 ml"], ["Ginger ale", "80 ml"], ["Angostura", "2 golpes"]] },
-  { name: "Tinto Naranja", short: "TINTO NARANJA", color: "#8b2e42", note: "Vino profundo con naranja y un final herbal.", method: "Remueve con hielo hasta enfriar.", ingredients: [["Vino", "70 ml"], ["Triple sec", "15 ml"], ["Vermouth", "20 ml"]] },
-  { name: "Jardín Tónico", short: "JARDÍN TÓNICO", color: "#d7e34c", note: "Botánico, brillante y muy refrescante.", method: "Sirve el gin sobre hielo y completa con tónica.", ingredients: [["Gin", "35 ml"], ["Agua tónica", "90 ml"], ["Angostura", "2 golpes"]] },
-  { name: "Vermut Highball", short: "VERMUT HIGHBALL", color: "#a9d8cc", note: "Herbal, largo y de baja intensidad.", method: "Sirve en vaso alto con mucho hielo.", ingredients: [["Vermouth", "45 ml"], ["Ginger ale", "75 ml"], ["Angostura", "2 golpes"]] },
-  { name: "Brisa de Agave", short: "BRISA DE AGAVE", color: "#3b7f6b", note: "Agave seco con naranja y tónica.", method: "Integra en vaso con hielo y remueve una vez.", ingredients: [["Tequila", "35 ml"], ["Triple sec", "15 ml"], ["Agua tónica", "75 ml"]] },
-  { name: "Rojo Amargo", short: "ROJO AMARGO", color: "#7a4529", note: "Vino, Aperol y especias en equilibrio.", method: "Sirve sobre hielo y termina con Angostura.", ingredients: [["Vino", "60 ml"], ["Aperol", "25 ml"], ["Angostura", "2 golpes"]] },
-  { name: "Naranja Botánica", short: "NARANJA BOT.", color: "#ff8f2f", note: "Gin cítrico con un final de jengibre.", method: "Sirve con hielo y completa con ginger ale.", ingredients: [["Gin", "30 ml"], ["Triple sec", "15 ml"], ["Ginger ale", "70 ml"]] },
-  { name: "Atardecer Andino", short: "ATARDECER", color: "#d45b72", note: "Pisco y vermouth con una capa de naranja.", method: "Remueve con hielo y sirve bien frío.", ingredients: [["Pisco", "30 ml"], ["Vermouth", "30 ml"], ["Triple sec", "10 ml"]] },
-  { name: "Cuba Libre", short: "CUBA LIBRE", color: "#bf4b32", note: "Ron, cola y limón; simple y refrescante.", method: "Llena un vaso con hielo, añade el ron y el limón, completa con Coca-Cola y remueve.", ingredients: [["Ron", "45 ml"], ["Coca-Cola", "100 ml"], ["Limón", "½ unidad"]] },
-  { name: "Whisky Cola", short: "WHISKY COLA", color: "#a97336", note: "Whisky largo con cola y un corte cítrico.", method: "Sirve el whisky sobre hielo, completa con Coca-Cola y termina con una rodaja de limón.", ingredients: [["Whisky", "45 ml"], ["Coca-Cola", "100 ml"], ["Limón", "1 rodaja"]] },
-  { name: "Ron Tropical", short: "RON TROPICAL", color: "#f09a3e", note: "Ron frutal con piña y naranja.", method: "Agita el ron y los jugos con hielo; sirve colado sobre hielo fresco.", ingredients: [["Ron", "40 ml"], ["Jugo de piña", "60 ml"], ["Jugo de naranja", "40 ml"]] },
-  { name: "Whisky Manzana", short: "WHISKY MANZ.", color: "#8da646", note: "Whisky, manzana y especias aromáticas.", method: "Sirve con hielo, añade el jugo de manzana y termina con dos golpes de Angostura.", ingredients: [["Whisky", "40 ml"], ["Jugo de manzana", "80 ml"], ["Angostura", "2 golpes"]] }
+  { name: "Sol de Agave", short: "SOL DE AGAVE", color: "#f06428", calories: 115, note: "Tequila, Aperol y burbujas especiadas.", method: "Sirve con hielo y completa con ginger ale.", ingredients: [["Tequila", "30 ml"], ["Aperol", "20 ml"], ["Ginger ale", "60 ml"]] },
+  { name: "Pisco Spritz", short: "PISCO SPRITZ", color: "#ef3f25", calories: 116, note: "Frutal, cítrico y ligeramente amargo.", method: "Sirve con hielo y remueve suavemente.", ingredients: [["Pisco", "30 ml"], ["Aperol", "20 ml"], ["Agua tónica", "60 ml"]] },
+  { name: "Lima Mule", short: "LIMA MULE", color: "#f7b83c", calories: 127, note: "Pisco fresco con jengibre y especias.", method: "Construye directamente en un vaso con hielo.", ingredients: [["Pisco", "40 ml"], ["Ginger ale", "80 ml"], ["Angostura", "2 golpes"]] },
+  { name: "Tinto Naranja", short: "TINTO NARANJA", color: "#8b2e42", calories: 132, note: "Vino profundo con naranja y un final herbal.", method: "Remueve con hielo hasta enfriar.", ingredients: [["Vino", "70 ml"], ["Triple sec", "15 ml"], ["Vermouth", "20 ml"]] },
+  { name: "Jardín Tónico", short: "JARDÍN TÓNICO", color: "#d7e34c", calories: 128, note: "Botánico, brillante y muy refrescante.", method: "Sirve el gin sobre hielo y completa con tónica.", ingredients: [["Gin", "35 ml"], ["Agua tónica", "90 ml"], ["Angostura", "2 golpes"]] },
+  { name: "Vermut Highball", short: "VERMUT HIGHBALL", color: "#a9d8cc", calories: 99, note: "Herbal, largo y de baja intensidad.", method: "Sirve en vaso alto con mucho hielo.", ingredients: [["Vermouth", "45 ml"], ["Ginger ale", "75 ml"], ["Angostura", "2 golpes"]] },
+  { name: "Brisa de Agave", short: "BRISA DE AGAVE", color: "#3b7f6b", calories: 149, note: "Agave seco con naranja y tónica.", method: "Integra en vaso con hielo y remueve una vez.", ingredients: [["Tequila", "35 ml"], ["Triple sec", "15 ml"], ["Agua tónica", "75 ml"]] },
+  { name: "Rojo Amargo", short: "ROJO AMARGO", color: "#7a4529", calories: 88, note: "Vino, Aperol y especias en equilibrio.", method: "Sirve sobre hielo y termina con Angostura.", ingredients: [["Vino", "60 ml"], ["Aperol", "25 ml"], ["Angostura", "2 golpes"]] },
+  { name: "Naranja Botánica", short: "NARANJA BOT.", color: "#ff8f2f", calories: 145, note: "Gin cítrico con un final de jengibre.", method: "Sirve con hielo y completa con ginger ale.", ingredients: [["Gin", "30 ml"], ["Triple sec", "15 ml"], ["Ginger ale", "70 ml"]] },
+  { name: "Atardecer Andino", short: "ATARDECER", color: "#d45b72", calories: 143, note: "Pisco y vermouth con una capa de naranja.", method: "Remueve con hielo y sirve bien frío.", ingredients: [["Pisco", "30 ml"], ["Vermouth", "30 ml"], ["Triple sec", "10 ml"]] },
+  { name: "Cuba Libre", short: "CUBA LIBRE", color: "#bf4b32", calories: 156, note: "Ron, cola y limón; simple y refrescante.", method: "Llena un vaso con hielo, añade el ron y el limón, completa con Coca-Cola y remueve.", ingredients: [["Ron", "45 ml"], ["Coca-Cola", "100 ml"], ["Limón", "½ unidad"]] },
+  { name: "Whisky Cola", short: "WHISKY COLA", color: "#a97336", calories: 158, note: "Whisky largo con cola y un corte cítrico.", method: "Sirve el whisky sobre hielo, completa con Coca-Cola y termina con una rodaja de limón.", ingredients: [["Whisky", "45 ml"], ["Coca-Cola", "100 ml"], ["Limón", "1 rodaja"]] },
+  { name: "Ron Tropical", short: "RON TROPICAL", color: "#f09a3e", calories: 142, note: "Ron frutal con piña y naranja.", method: "Agita el ron y los jugos con hielo; sirve colado sobre hielo fresco.", ingredients: [["Ron", "40 ml"], ["Jugo de piña", "60 ml"], ["Jugo de naranja", "40 ml"]] },
+  { name: "Whisky Manzana", short: "WHISKY MANZ.", color: "#8da646", calories: 142, note: "Whisky, manzana y especias aromáticas.", method: "Sirve con hielo, añade el jugo de manzana y termina con dos golpes de Angostura.", ingredients: [["Whisky", "40 ml"], ["Jugo de manzana", "80 ml"], ["Angostura", "2 golpes"]] }
 ];
 
 const canvas = document.querySelector("#wheel");
@@ -23,12 +23,14 @@ const resultNumber = document.querySelector("#resultNumber");
 const resultName = document.querySelector("#resultName");
 const resultNote = document.querySelector("#resultNote");
 const resultMethod = document.querySelector("#resultMethod");
+const resultCalories = document.querySelector("#resultCalories");
 const resultSwatch = document.querySelector("#resultSwatch");
 const spinAgainButton = document.querySelector("#spinAgainButton");
 const copyButton = document.querySelector("#copyButton");
 const recipeList = document.querySelector("#recipeList");
 const recipeName = document.querySelector("#recipeName");
 const recipeDescription = document.querySelector("#recipeDescription");
+const recipeCalories = document.querySelector("#recipeCalories");
 const glassLiquid = document.querySelector("#glassLiquid");
 const roundCounter = document.querySelector("#roundCounter");
 const toast = document.querySelector("#toast");
@@ -98,7 +100,7 @@ function populateIngredients() {
       <span class="ingredient-index">${String(index + 1).padStart(2, "0")}</span>
       <span class="ingredient-dot" style="background:${item.color}"></span>
       <strong class="ingredient-name">${item.name}</strong>
-      <small>${item.ingredients.map(part => part[0]).join(" · ")}</small>
+      <small>${item.ingredients.map(part => part[0]).join(" · ")}<b>≈ ${item.calories} kcal / 200 ml</b></small>
     </li>
   `).join("");
 }
@@ -109,6 +111,7 @@ function selectIngredient(index) {
   resultName.textContent = selected.name;
   resultNote.textContent = selected.ingredients.map(part => `${part[0]} ${part[1]}`).join(" · ");
   resultMethod.textContent = selected.method;
+  resultCalories.textContent = `≈ ${selected.calories} kcal · vaso de 200 ml`;
   resultSwatch.style.background = selected.color;
   copyButton.disabled = false;
   renderRecipe();
@@ -124,6 +127,7 @@ function spin() {
   resultName.textContent = "Girando…";
   resultNote.textContent = "El azar está eligiendo.";
   resultMethod.textContent = "En un momento tendrás la preparación completa.";
+  resultCalories.textContent = "Calculando la porción…";
 
   const winner = Math.floor(Math.random() * cocktails.length);
   const sliceDeg = 360 / cocktails.length;
@@ -155,6 +159,7 @@ function renderRecipe() {
   if (!selected) return;
   recipeName.textContent = selected.name;
   recipeDescription.textContent = selected.method;
+  recipeCalories.textContent = `≈ ${selected.calories} kcal por vaso de 200 ml`;
   recipeList.innerHTML = selected.ingredients.map((part, index) => `
     <li><span>${String(index + 1).padStart(2, "0")}</span><strong>${part[0]}</strong><small>${part[1]}</small></li>
   `).join("");
@@ -172,7 +177,7 @@ spinButton.addEventListener("click", spin);
 spinAgainButton.addEventListener("click", spin);
 copyButton.addEventListener("click", async () => {
   if (!selected) return;
-  const text = `${selected.name}\n${selected.ingredients.map(part => `${part[0]}: ${part[1]}`).join("\n")}\n${selected.method}`;
+  const text = `${selected.name}\n≈ ${selected.calories} kcal por vaso de 200 ml\n${selected.ingredients.map(part => `${part[0]}: ${part[1]}`).join("\n")}\n${selected.method}`;
   await navigator.clipboard.writeText(text);
   showToast("Receta copiada");
 });
