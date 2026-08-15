@@ -1,10 +1,10 @@
 # Gira & Sirve
 
-Ruleta web interactiva de cÃ³cteles para una noche de tragos. Cada segmento propone una mezcla completa creada con tequila, Aperol, pisco, vino, ginger ale, agua tÃ³nica, gin, Angostura, triple sec, vermouth, whisky, ron, Coca-Cola y frutas comunes. Al finalizar el giro se muestran cantidades e instrucciones de preparaciÃ³n.
+Ruleta web interactiva de cócteles para una noche de tragos. Cada segmento propone una mezcla completa creada con tequila, Aperol, pisco, vino, ginger ale, agua tónica, gin, Angostura, triple sec, vermouth, whisky, ron, Coca-Cola y frutas comunes. Al finalizar el giro se muestran cantidades e instrucciones de preparación.
 
 ## Uso local
 
-No requiere instalaciÃ³n ni dependencias. Abre `index.html` en el navegador o sirve la carpeta con cualquier servidor estÃ¡tico.
+No requiere instalación ni dependencias. Abre `index.html` en el navegador o sirve la carpeta con cualquier servidor estático.
 
 ```bash
 python -m http.server 8080
@@ -12,9 +12,9 @@ python -m http.server 8080
 
 Luego visita `http://localhost:8080`.
 
-## PublicaciÃ³n
+## Publicación
 
-La aplicaciÃ³n es totalmente estÃ¡tica y estÃ¡ lista para publicarse con GitHub Pages desde la rama `main` y la carpeta raÃ­z.
+La aplicación es totalmente estática y está lista para publicarse con GitHub Pages desde la rama `main` y la carpeta raíz.
 
 > Disfruta con responsabilidad. Solo para mayores de edad.
 
