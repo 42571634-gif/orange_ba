@@ -39,7 +39,7 @@ let selected = null;
 let round = 1;
 
 const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-const spinDuration = prefersReducedMotion ? 120 : 2200;
+const spinDuration = prefersReducedMotion ? 700 : 2200;
 
 function drawWheel() {
   const size = canvas.width;
@@ -130,11 +130,10 @@ function spin() {
   const current = ((rotation % 360) + 360) % 360;
   const desired = (360 - winner * sliceDeg) % 360;
   const delta = (desired - current + 360) % 360;
-  rotation += 1080 + delta;
+  const fullTurns = prefersReducedMotion ? 1 : 3;
+  rotation += fullTurns * 360 + delta;
 
-  canvas.style.transition = prefersReducedMotion
-    ? "none"
-    : `transform ${spinDuration}ms cubic-bezier(.12,.72,.12,1)`;
+  canvas.style.transition = `transform ${spinDuration}ms cubic-bezier(.12,.72,.12,1)`;
   canvas.style.transform = `rotate(${rotation}deg)`;
 
   let finished = false;
@@ -148,9 +147,7 @@ function spin() {
     roundCounter.textContent = `Ronda ${String(round).padStart(2, "0")}`;
   };
 
-  if (!prefersReducedMotion) {
-    canvas.addEventListener("transitionend", finishSpin, { once: true });
-  }
+  canvas.addEventListener("transitionend", finishSpin, { once: true });
   setTimeout(finishSpin, spinDuration + 100);
 }
 
