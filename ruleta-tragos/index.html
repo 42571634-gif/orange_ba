@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f4efe4">
+  <meta name="description" content="Gira la ruleta y deja que el azar prepare la siguiente mezcla.">
+  <title>Gira & Sirve — Ruleta de tragos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="Gira y Sirve, inicio">
+      <span class="brand-mark">G&S</span>
+      <span>Gira &amp; Sirve</span>
+    </a>
+    <div class="header-meta">
+      <span class="status-dot" aria-hidden="true"></span>
+      <span>Noche en curso</span>
+      <span class="header-separator"></span>
+      <span id="roundCounter">Ronda 01</span>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="pageTitle">
+      <div class="intro">
+        <p class="eyebrow"><span>✦</span> El azar tiene buen gusto</p>
+        <h1 id="pageTitle">Que gire.<br><em>Que sorprenda.</em></h1>
+        <p class="intro-copy">Catorce cócteles posibles, creados con tu barra y frutas comunes. Gira y deja que la ruleta elija la mezcla completa de esta ronda.</p>
+
+        <div class="result-card" id="resultCard" aria-live="polite">
+          <div class="result-number" id="resultNumber">00</div>
+          <div>
+            <span class="result-label">El cóctel ganador</span>
+            <strong id="resultName">¿Qué mezclamos?</strong>
+            <p id="resultNote">Dale al botón para revelar receta y proporciones.</p>
+            <p class="result-method" id="resultMethod">Las instrucciones aparecerán aquí.</p>
+          </div>
+          <span class="result-swatch" id="resultSwatch" aria-hidden="true"></span>
+        </div>
+      </div>
+
+      <div class="wheel-stage">
+        <div class="orbit-label orbit-label--top">BUENA SUERTE</div>
+        <div class="orbit-label orbit-label--bottom">SALUD · SALUD</div>
+        <div class="pointer" aria-hidden="true"><span></span></div>
+        <div class="wheel-wrap">
+          <canvas id="wheel" width="720" height="720" aria-label="Ruleta con catorce cócteles"></canvas>
+          <button class="spin-button" id="spinButton" type="button" aria-label="Girar la ruleta">
+            <span>GIRAR</span>
+            <small>↗</small>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="bar-panel" aria-labelledby="barTitle">
+      <div class="panel-heading">
+        <div>
+          <p class="eyebrow eyebrow--dark">Carta de la casa</p>
+          <h2 id="barTitle">Catorce mezclas posibles</h2>
+        </div>
+        <p>Cada segmento es un cóctel completo armado exclusivamente con los ingredientes de tu barra.</p>
+      </div>
+      <ol class="ingredient-grid" id="ingredientGrid"></ol>
+    </section>
+
+    <section class="mix-section" id="recipeSection" aria-labelledby="mixTitle">
+      <div class="mix-copy">
+        <p class="eyebrow"><span>✦</span> Receta ganadora</p>
+        <h2 id="mixTitle">Una vuelta.<br><em>Un cóctel.</em></h2>
+        <p id="recipeDescription">Gira la ruleta y aquí aparecerá la receta completa: cantidades, ingredientes y cómo servirla.</p>
+        <div class="mix-actions">
+          <button class="secondary-button" id="spinAgainButton" type="button">Girar la ruleta</button>
+          <button class="text-button" id="copyButton" type="button" disabled>Copiar receta</button>
+        </div>
+      </div>
+
+      <div class="glass-card">
+        <div class="glass" aria-hidden="true">
+          <div class="glass-liquid" id="glassLiquid"></div>
+          <div class="glass-shine"></div>
+        </div>
+        <div class="recipe">
+          <span class="recipe-kicker">Selección de la ruleta</span>
+          <h3 id="recipeName">Esperando un giro</h3>
+          <ul id="recipeList">
+            <li class="empty-slot"><span>01</span> Aquí aparecerá la base</li>
+            <li class="empty-slot"><span>02</span> —</li>
+            <li class="empty-slot"><span>03</span> —</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Gira con amigos. Sirve con medida.</p>
+    <p>Solo para mayores de edad · Intercala cada ronda con agua.</p>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite">Receta lista</div>
+  <script src="app.js"></script>
+</body>
+</html>
+
