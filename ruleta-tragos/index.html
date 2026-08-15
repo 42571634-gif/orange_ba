@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=4">
+  <link rel="stylesheet" href="styles.css?v=5">
 </head>
 <body>
   <div class="grain" aria-hidden="true"></div>
@@ -40,6 +40,7 @@
             <strong id="resultName">¿Qué mezclamos?</strong>
             <p id="resultNote">Dale al botón para revelar receta y proporciones.</p>
             <p class="result-method" id="resultMethod">Las instrucciones aparecerán aquí.</p>
+            <span class="calorie-pill" id="resultCalories">Calorías por vaso de 200 ml</span>
           </div>
           <span class="result-swatch" id="resultSwatch" aria-hidden="true"></span>
         </div>
@@ -75,6 +76,7 @@
         <p class="eyebrow"><span>✦</span> Receta ganadora</p>
         <h2 id="mixTitle">Una vuelta.<br><em>Un cóctel.</em></h2>
         <p id="recipeDescription">Gira la ruleta y aquí aparecerá la receta completa: cantidades, ingredientes y cómo servirla.</p>
+        <p class="calorie-disclaimer">Valores aproximados por vaso de 200 ml. Pueden variar según marca, graduación y cantidad de hielo.</p>
         <div class="mix-actions">
           <button class="secondary-button" id="spinAgainButton" type="button">Girar la ruleta</button>
           <button class="text-button" id="copyButton" type="button" disabled>Copiar receta</button>
@@ -89,6 +91,7 @@
         <div class="recipe">
           <span class="recipe-kicker">Selección de la ruleta</span>
           <h3 id="recipeName">Esperando un giro</h3>
+          <span class="recipe-calories" id="recipeCalories">Calorías pendientes</span>
           <ul id="recipeList">
             <li class="empty-slot"><span>01</span> Aquí aparecerá la base</li>
             <li class="empty-slot"><span>02</span> —</li>
@@ -105,7 +108,7 @@
   </footer>
 
   <div class="toast" id="toast" role="status" aria-live="polite">Receta lista</div>
-  <script src="app.js?v=4"></script>
+  <script src="app.js?v=5"></script>
 </body>
 </html>
 

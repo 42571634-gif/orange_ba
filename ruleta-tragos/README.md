@@ -1,6 +1,6 @@
 # Gira & Sirve
 
-Ruleta web interactiva de cócteles para una noche de tragos. Cada segmento propone una mezcla completa creada con tequila, Aperol, pisco, vino, ginger ale, agua tónica, gin, Angostura, triple sec, vermouth, whisky, ron, Coca-Cola y frutas comunes. Al finalizar el giro se muestran cantidades e instrucciones de preparación.
+Ruleta web interactiva de cócteles para una noche de tragos. Cada segmento propone una mezcla completa creada con tequila, Aperol, pisco, vino, ginger ale, agua tónica, gin, Angostura, triple sec, vermouth, whisky, ron, Coca-Cola y frutas comunes. Al finalizar el giro se muestran cantidades, instrucciones de preparación y calorías aproximadas por vaso de 200 ml.
 
 ## Uso local
 
