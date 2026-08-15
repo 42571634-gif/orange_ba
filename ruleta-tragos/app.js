@@ -1,18 +1,18 @@
 const cocktails = [
   { name: "Sol de Agave", short: "SOL DE AGAVE", color: "#f06428", note: "Tequila, Aperol y burbujas especiadas.", method: "Sirve con hielo y completa con ginger ale.", ingredients: [["Tequila", "30 ml"], ["Aperol", "20 ml"], ["Ginger ale", "60 ml"]] },
-  { name: "Pisco Spritz", short: "PISCO SPRITZ", color: "#ef3f25", note: "Frutal, cÃ­trico y ligeramente amargo.", method: "Sirve con hielo y remueve suavemente.", ingredients: [["Pisco", "30 ml"], ["Aperol", "20 ml"], ["Agua tÃ³nica", "60 ml"]] },
+  { name: "Pisco Spritz", short: "PISCO SPRITZ", color: "#ef3f25", note: "Frutal, cítrico y ligeramente amargo.", method: "Sirve con hielo y remueve suavemente.", ingredients: [["Pisco", "30 ml"], ["Aperol", "20 ml"], ["Agua tónica", "60 ml"]] },
   { name: "Lima Mule", short: "LIMA MULE", color: "#f7b83c", note: "Pisco fresco con jengibre y especias.", method: "Construye directamente en un vaso con hielo.", ingredients: [["Pisco", "40 ml"], ["Ginger ale", "80 ml"], ["Angostura", "2 golpes"]] },
   { name: "Tinto Naranja", short: "TINTO NARANJA", color: "#8b2e42", note: "Vino profundo con naranja y un final herbal.", method: "Remueve con hielo hasta enfriar.", ingredients: [["Vino", "70 ml"], ["Triple sec", "15 ml"], ["Vermouth", "20 ml"]] },
-  { name: "JardÃ­n TÃ³nico", short: "JARDÃN TÃ“NICO", color: "#d7e34c", note: "BotÃ¡nico, brillante y muy refrescante.", method: "Sirve el gin sobre hielo y completa con tÃ³nica.", ingredients: [["Gin", "35 ml"], ["Agua tÃ³nica", "90 ml"], ["Angostura", "2 golpes"]] },
+  { name: "Jardín Tónico", short: "JARDÍN TÓNICO", color: "#d7e34c", note: "Botánico, brillante y muy refrescante.", method: "Sirve el gin sobre hielo y completa con tónica.", ingredients: [["Gin", "35 ml"], ["Agua tónica", "90 ml"], ["Angostura", "2 golpes"]] },
   { name: "Vermut Highball", short: "VERMUT HIGHBALL", color: "#a9d8cc", note: "Herbal, largo y de baja intensidad.", method: "Sirve en vaso alto con mucho hielo.", ingredients: [["Vermouth", "45 ml"], ["Ginger ale", "75 ml"], ["Angostura", "2 golpes"]] },
-  { name: "Brisa de Agave", short: "BRISA DE AGAVE", color: "#3b7f6b", note: "Agave seco con naranja y tÃ³nica.", method: "Integra en vaso con hielo y remueve una vez.", ingredients: [["Tequila", "35 ml"], ["Triple sec", "15 ml"], ["Agua tÃ³nica", "75 ml"]] },
+  { name: "Brisa de Agave", short: "BRISA DE AGAVE", color: "#3b7f6b", note: "Agave seco con naranja y tónica.", method: "Integra en vaso con hielo y remueve una vez.", ingredients: [["Tequila", "35 ml"], ["Triple sec", "15 ml"], ["Agua tónica", "75 ml"]] },
   { name: "Rojo Amargo", short: "ROJO AMARGO", color: "#7a4529", note: "Vino, Aperol y especias en equilibrio.", method: "Sirve sobre hielo y termina con Angostura.", ingredients: [["Vino", "60 ml"], ["Aperol", "25 ml"], ["Angostura", "2 golpes"]] },
-  { name: "Naranja BotÃ¡nica", short: "NARANJA BOT.", color: "#ff8f2f", note: "Gin cÃ­trico con un final de jengibre.", method: "Sirve con hielo y completa con ginger ale.", ingredients: [["Gin", "30 ml"], ["Triple sec", "15 ml"], ["Ginger ale", "70 ml"]] },
-  { name: "Atardecer Andino", short: "ATARDECER", color: "#d45b72", note: "Pisco y vermouth con una capa de naranja.", method: "Remueve con hielo y sirve bien frÃ­o.", ingredients: [["Pisco", "30 ml"], ["Vermouth", "30 ml"], ["Triple sec", "10 ml"]] },
-  { name: "Cuba Libre", short: "CUBA LIBRE", color: "#bf4b32", note: "Ron, cola y limÃ³n; simple y refrescante.", method: "Llena un vaso con hielo, aÃ±ade el ron y el limÃ³n, completa con Coca-Cola y remueve.", ingredients: [["Ron", "45 ml"], ["Coca-Cola", "100 ml"], ["LimÃ³n", "Â½ unidad"]] },
-  { name: "Whisky Cola", short: "WHISKY COLA", color: "#a97336", note: "Whisky largo con cola y un corte cÃ­trico.", method: "Sirve el whisky sobre hielo, completa con Coca-Cola y termina con una rodaja de limÃ³n.", ingredients: [["Whisky", "45 ml"], ["Coca-Cola", "100 ml"], ["LimÃ³n", "1 rodaja"]] },
-  { name: "Ron Tropical", short: "RON TROPICAL", color: "#f09a3e", note: "Ron frutal con piÃ±a y naranja.", method: "Agita el ron y los jugos con hielo; sirve colado sobre hielo fresco.", ingredients: [["Ron", "40 ml"], ["Jugo de piÃ±a", "60 ml"], ["Jugo de naranja", "40 ml"]] },
-  { name: "Whisky Manzana", short: "WHISKY MANZ.", color: "#8da646", note: "Whisky, manzana y especias aromÃ¡ticas.", method: "Sirve con hielo, aÃ±ade el jugo de manzana y termina con dos golpes de Angostura.", ingredients: [["Whisky", "40 ml"], ["Jugo de manzana", "80 ml"], ["Angostura", "2 golpes"]] }
+  { name: "Naranja Botánica", short: "NARANJA BOT.", color: "#ff8f2f", note: "Gin cítrico con un final de jengibre.", method: "Sirve con hielo y completa con ginger ale.", ingredients: [["Gin", "30 ml"], ["Triple sec", "15 ml"], ["Ginger ale", "70 ml"]] },
+  { name: "Atardecer Andino", short: "ATARDECER", color: "#d45b72", note: "Pisco y vermouth con una capa de naranja.", method: "Remueve con hielo y sirve bien frío.", ingredients: [["Pisco", "30 ml"], ["Vermouth", "30 ml"], ["Triple sec", "10 ml"]] },
+  { name: "Cuba Libre", short: "CUBA LIBRE", color: "#bf4b32", note: "Ron, cola y limón; simple y refrescante.", method: "Llena un vaso con hielo, añade el ron y el limón, completa con Coca-Cola y remueve.", ingredients: [["Ron", "45 ml"], ["Coca-Cola", "100 ml"], ["Limón", "½ unidad"]] },
+  { name: "Whisky Cola", short: "WHISKY COLA", color: "#a97336", note: "Whisky largo con cola y un corte cítrico.", method: "Sirve el whisky sobre hielo, completa con Coca-Cola y termina con una rodaja de limón.", ingredients: [["Whisky", "45 ml"], ["Coca-Cola", "100 ml"], ["Limón", "1 rodaja"]] },
+  { name: "Ron Tropical", short: "RON TROPICAL", color: "#f09a3e", note: "Ron frutal con piña y naranja.", method: "Agita el ron y los jugos con hielo; sirve colado sobre hielo fresco.", ingredients: [["Ron", "40 ml"], ["Jugo de piña", "60 ml"], ["Jugo de naranja", "40 ml"]] },
+  { name: "Whisky Manzana", short: "WHISKY MANZ.", color: "#8da646", note: "Whisky, manzana y especias aromáticas.", method: "Sirve con hielo, añade el jugo de manzana y termina con dos golpes de Angostura.", ingredients: [["Whisky", "40 ml"], ["Jugo de manzana", "80 ml"], ["Angostura", "2 golpes"]] }
 ];
 
 const canvas = document.querySelector("#wheel");
@@ -95,7 +95,7 @@ function populateIngredients() {
       <span class="ingredient-index">${String(index + 1).padStart(2, "0")}</span>
       <span class="ingredient-dot" style="background:${item.color}"></span>
       <strong class="ingredient-name">${item.name}</strong>
-      <small>${item.ingredients.map(part => part[0]).join(" Â· ")}</small>
+      <small>${item.ingredients.map(part => part[0]).join(" · ")}</small>
     </li>
   `).join("");
 }
@@ -104,7 +104,7 @@ function selectIngredient(index) {
   selected = cocktails[index];
   resultNumber.textContent = String(index + 1).padStart(2, "0");
   resultName.textContent = selected.name;
-  resultNote.textContent = selected.ingredients.map(part => `${part[0]} ${part[1]}`).join(" Â· ");
+  resultNote.textContent = selected.ingredients.map(part => `${part[0]} ${part[1]}`).join(" · ");
   resultMethod.textContent = selected.method;
   resultSwatch.style.background = selected.color;
   copyButton.disabled = false;
@@ -118,9 +118,9 @@ function spin() {
   spinning = true;
   spinButton.disabled = true;
   copyButton.disabled = true;
-  resultName.textContent = "Girandoâ€¦";
-  resultNote.textContent = "El azar estÃ¡ eligiendo.";
-  resultMethod.textContent = "En un momento tendrÃ¡s la preparaciÃ³n completa.";
+  resultName.textContent = "Girando…";
+  resultNote.textContent = "El azar está eligiendo.";
+  resultMethod.textContent = "En un momento tendrás la preparación completa.";
 
   const winner = Math.floor(Math.random() * cocktails.length);
   const sliceDeg = 360 / cocktails.length;
